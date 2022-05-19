@@ -1,5 +1,5 @@
 /* 
-This document will have differnt ways to approach nav styling. Refer to README.txt
+This document will have different ways to approach nav styling. Refer to README.txt
 */
 
 *, *::before, *::after {
@@ -68,31 +68,38 @@ header {
     padding: .5em 0;
 }
 
+.logo {
+    display: flex;
+    margin-right: 1em;
+}
+
 .nav__list {
     display: flex;
+    align-items: center;
     margin: 0;
     padding: 0;
     list-style: none;
+    font-size: .9rem;
 }
-/*-------- For the space between nav items - can use either ----------*/
-/* ------- But the second one will remove the tiny gap on ------------*/
-/* ------- the right side of the sign up button ----------------------*/
-/* .nav__item {
-    margin-right: 1em;
-} */
+/* ------- For centering the primary nav list ------ */
+.nav__list--primary {
+    margin: 0 auto;
+}
+
+/*-------- For the space between nav items ----------*/
 
 .nav__item + .nav__item {
     margin-left: 1em;
 }
 
-/*-------- For the positioning of the nav items - can use any of them ---------*/
-/* .nav__item--push-right{
-    margin-left: auto;
-} */
+/*-------- For the positioning of the nav items ---------*/
 
 .nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 /* --------------------------------------------------------------------------- */
 

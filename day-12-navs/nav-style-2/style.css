@@ -1,5 +1,5 @@
 /* 
-This document will have differnt ways to approach nav styling. Refer to README.txt
+This document will have different ways to approach nav styling. Refer to README.txt
 */
 
 *, *::before, *::after {
@@ -70,6 +70,7 @@ header {
 
 .logo {
     margin-right: 1em;
+    display: flex;
 }
 
 .nav__list {

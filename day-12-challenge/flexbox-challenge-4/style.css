@@ -1,0 +1,149 @@
+/* Reset properties */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+main,
+h1, h2, h3,
+p {
+    margin: 0;
+}
+
+  
+/* Custom Properties */
+  :root {
+    
+    font-size: 10px;
+    --fs-1: 6.0rem;
+    --fs-2: 3.6rem;
+    --fs-3: 2.1rem;                                       /* fs = font size */
+    --fs-p: 1.8rem;
+
+    --ff1: 'Roboto', sans-serif;
+    --fw-l: 300;                                      /* fw-l = light */
+    --fw-r: 400;
+
+    --ff2: 'Playfair Display', serif;
+    --fw-bk: 900;
+
+    
+    --primary-clr-be: #F3EED9;         /* Beige - hero background */
+    --primary-clr-br: #824936;        /* Brown - Hero title, primary section title, tertiary background */
+    --primary-gg: #222C2A;         /* Green gray - secondary section background */
+    
+  }
+
+
+/* General styles */
+
+img {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.container {
+    width: 80%;
+    max-width: 1128px;
+    margin: 0 auto;
+    padding: 8em 0;
+    display: flex;
+    justify-content: center;
+    gap: 6em;
+}
+
+.col {
+    width: 100%;
+}
+
+.col .sub-title {
+    margin-bottom: .8em;
+}
+
+/* General typography */
+h1 {
+    font-family: var(--ff2);
+    font-size: var(--fs-1);
+    color: var(--primary-clr-br);
+    line-height: 5rem;
+}
+
+h2 {
+    font-family: var(--ff2);
+    font-size: var(--fs-2);
+    color: var(--primary-clr-br);
+}
+
+h3 {
+    font-family: var(--ff1);
+    font-size: var(--fs-3);
+    font-weight: var(--fw-l);
+    color: var(--primary-gg);
+    text-transform: uppercase;
+    letter-spacing: 1.1rem;
+}
+
+p {
+    font-family: var(--ff1);
+    font-size: var(--fs-p);
+    color: black;
+    line-height: 3rem;
+}
+
+.sub-title,
+.sub-para {
+    color: var(--primary-clr-be);
+}
+
+/* Sections */
+/* section {
+    min-height: 485px;
+} */
+/* Hero */
+.hero {
+    background-color: var(--primary-clr-be);
+    min-height: 660px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.head {
+    margin-bottom: 1em;
+}
+
+/* Primary */
+.primary-row {
+    background: white;
+    padding: 8em 0;
+}
+
+.primary-row .container {
+    padding: 0 0 4em 0;
+}
+
+.primary-row-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Secondary */
+.secondary-row {
+    background-color: var(--primary-gg);
+}
+
+/* Tertiary */
+.tertiary-row {
+    background-color: var(--primary-clr-br);
+}
