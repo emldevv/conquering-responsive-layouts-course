@@ -1,0 +1,84 @@
+/* Reset properties */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+}
+
+.example {
+    width: 90%;
+    margin: 5em auto;
+    padding: 10em 0;
+    background-color: steelblue;
+}
+
+/* Targets 600px or smaller
+@media (max-width: 600px) {
+
+}
+*/
+
+/* Targets 600px or bigger
+
+@media (min-width: 600px) {
+
+}
+*/
+
+/* Or, you can combine the above two examples */
+/* Targets any device screen width between 600-900px
+
+@media (min-width: 600px) 
+and (max-width: 900px) {
+
+}
+*/
+
+/* Example - change comment-out parameters to switch between examples*/
+
+/* Mobile-first - 600px or bigger it changes */
+/* @media (min-width: 600px) {
+    .example {
+        background-color: olivedrab;
+    }
+} */
+
+/* Desktop-first - 600px or smaller it changes */
+/* @media (max-width: 600px) {
+    .example {
+        background-color: olivedrab;
+    }
+} */
+
+
+/* 3-stage example - change comment-out parameters to switch between examples */
+
+/* Our main CSS parameters work on mobile first - blue box */
+
+/* Then our medium-size screens change the box to olive green */
+@media (min-width: 600px) {
+    .example {
+        background-color: olivedrab;
+    }
+}
+
+/* Then our larger desktop screens change the box to orange */
+@media (min-width: 900px) {
+    .example {
+        background-color: orange;
+    }
+}
+
+/* NOTE - VERY IMPORTANT
+DO NOT place a smaller screen size media query under a bigger one because CSS takes
+the last rule and applies that to the mark up. You will not be able to get the 
+in-between size to work. Vice-versa if designing from desktop downwards. 
+Mobile-first = smallest media query to largest
+Desktop-first = largest media query to smallest
+*/
